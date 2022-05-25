@@ -23,7 +23,7 @@ module.exports = function (passport, next) {
         console.log("URL " + request.url);
         console.log("TOKEN a ", accessToken);
         console.log("TOKEN r ", refreshToken);
-        //console.log("PROFILE ", profile);
+
         const googleUser = {
           displayName : profile.displayName,
           email : profile.emails[0].value,
